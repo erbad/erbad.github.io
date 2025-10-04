@@ -1,5 +1,4 @@
-## erbad.github.io
-Test of GitHub site
+## WoW/Fumo test site
 
 Wow it's happening!
 
