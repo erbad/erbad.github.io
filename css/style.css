@@ -7,7 +7,7 @@ body {
   background-image: url('Pictures/WowPink.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* questa riga fa sì che lo sfondo si muova durante lo scroll */
+  background-attachment: fixed; /* alternative: scroll */
 }
 header {
   background: #000000;
@@ -17,14 +17,14 @@ header {
   transition: background 0.7s;
 }
 nav a {
-  color: #f7e4be;
+  color: #23B5D3;
   padding: 0.5em 1em;
   text-decoration: none;
   transition: color 0.3s;
 }
 nav a:hover {
-  color: #da4453;
-  border-bottom: 2px solid #da4453;
+  color: #EB84D6;
+  border-bottom: 2px solid #EB84D6;
   transition: border-bottom 0.4s;
 }
 section {
