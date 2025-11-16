@@ -1,0 +1,13 @@
+theme: jekyll-theme-minimal
+<<<<<<< HEAD
+title: Davide Erba's homepage
+=======
+title: WoW/Fumo website test
+>>>>>>> 125f7300d1f009fc9914aaaea8d4b58c32c7d3ba
+description: A test site to learn how-to!
+
+include_newlines: |
+            Si sta
+            Come d'autunno
+            Sugli alberi
+            Le foglie
