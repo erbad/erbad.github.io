@@ -4,10 +4,12 @@ body {
   color: #23B5D3;
   margin: 0;
   transition: background 0.5s;
-  background-image: url('../Pictures/LogoFumoRosa.png');
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('../Pictures/LogoFumoRosa.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* alternative: scroll */
+  background-attachment: fixed; /* o scroll */
 }
 
 header {
@@ -44,6 +46,14 @@ header {
 }
 #menu-vertical a:hover {
   background-color: #23B5D3;
+}
+
+
+#main-content, main {
+  width: 80%;
+  margin-left: 20%; /* lascia spazio al menu */
+  padding: 1em;
+  box-sizing: border-box;
 }
 
 section {
