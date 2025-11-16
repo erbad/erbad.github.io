@@ -71,7 +71,7 @@ footer {
   padding: 0;
   margin: 0;
   background-color: #283655;
-  display: flex;
+  /* display: flex; rimosso */
 }
 
 .menu > li {
