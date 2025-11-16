@@ -1,126 +1,32 @@
-body {
-  font-family: 'Montserrat', serif;
-  background: #FFFFFF;
-  color: #23B5D3;
+html, body {
+  height: 100%;
   margin: 0;
-  transition: background 0.5s;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('../Pictures/LogoFumoRosa.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* o scroll */
-}
-
-header {
-  background: #000000;
-  color: #fff;
-  padding: 1em 0;
-  text-align: center;
-  transition: background 0.7s;
-}
-
-#menu-vertical {
-  position: fixed;          /* fissa il menu sul lato sinistro sempre visibile */
-  top: 0;
-  left: 0;
-  width: 200px;             /* larghezza menu */
-  height: 100vh;            /* altezza tutta la finestra */
-  background-color: #EB84D6; /* colore di sfondo */
-  padding-top: 1em;
-}
-#menu-vertical ul {
-  list-style: none;         /* togli i pallini */
   padding: 0;
-  margin: 0;
-}
-#menu-vertical li {
-  margin-bottom: 1em;
-}
-#menu-vertical a {
-  text-decoration: none;
-  color: #FFFFFF;
-  display: block;
-  padding: 0.5em 1em;
-  transition: background-color 0.3s;
-}
-#menu-vertical a:hover {
-  background-color: #23B5D3;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% altezza viewport */
+}
+
+.container {
+  flex: 1; /* Occupa tutto lo spazio disponibile sopra il footer */
+  display: flex; /* Per mantenere layout con menu laterale */
+}
 
 #main-content, main {
   width: 80%;
-  margin-left: 20%; /* lascia spazio al menu */
+  margin-left: 20%;
   padding: 1em;
   box-sizing: border-box;
 }
 
-section {
-  margin: 2em auto;
-  max-width: 700px;
-  background: #fff;
-  padding: 1.5em;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #ccc;
-  transition: box-shadow 0.6s;
-}
+/* footer */
 footer {
   background: #283655;
   color: #fff;
   text-align: center;
   padding: 0.6em 0;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-/* Classi per il menu a tendina */
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #283655;
-  /* display: flex; rimosso */
-}
-
-.menu > li {
-  position: relative;
-}
-
-.menu a {
-  display: block;
-  padding: 10px 15px;
-  color: white;
-  text-decoration: none;
-}
-
-.menu li:hover {
-  background-color: #da4453;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  background-color: #444;
-  min-width: 150px;
-  z-index: 1000;
-}
-
-.submenu li a {
-  padding: 10px;
-  color: white;
-}
-
-.menu li:hover > .submenu {
-  display: block; /* Mostra il submenu al passaggio del mouse */
-}
-
-.submenu li:hover {
-  background-color: #555;
+  flex-shrink: 0; /* Non ridurre altezza */
 }
