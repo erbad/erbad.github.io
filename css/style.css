@@ -1,4 +1,18 @@
-html, body {
+body {
+  font-family: 'Montserrat', serif;
+  background: #FFFFFF;
+  color: #000000;
+  margin: 0;
+  transition: background 0.5s;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    url('../Pictures/LogoFumoRosa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* o scroll */
+}
+
+/*html, body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -8,7 +22,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* altezza minima viewport */
+  min-height: 100vh;  altezza minima viewport 
   background: #FFFFFF;
   color: #23B5D3;
   transition: background 0.5s;
@@ -17,8 +31,8 @@ body {
     url('../Pictures/LogoFumoRosa.png');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* o scroll */
-}
+  background-attachment: scroll; o scroll 
+} */
 
 .container {
   flex: 1;            /* occupa tutto lo spazio tra header e footer */
