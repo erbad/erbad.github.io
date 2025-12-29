@@ -13,13 +13,18 @@ body {
   transition: background 0.5s;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('../Pictures/LogoFumoRosa.png');
+    url('../Pictures/Tandem.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed; /* o scroll */
 }
 
-
+blockquote { 
+  margin: 1.5em 0; 
+  padding-left: 20px; 
+  border-left: 4px solid #B27395; 
+  font-style: italic;
+}
 
 /*html, body {
   height: 100%;
@@ -183,6 +188,7 @@ footer {
   margin: 0 auto; 
   padding: 40px 20px;
   text-align: center;
+  white-space: pre-wrap;
 }
 
 .highlight { 
