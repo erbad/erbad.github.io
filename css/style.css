@@ -12,7 +12,7 @@ body {
   margin: 0;
   transition: background 0.5s;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+    linear-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0)),
     url('../Pictures/Tandem.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,4 +192,13 @@ footer {
   font-weight: bold; 
   position: absolute; 
   left: 0; 
+}
+
+* {
+  font-family: 'Default', system-ui, -apple-system, sans-serif !important;
+}
+
+section object,
+object * {
+  font-family: 'Default', system-ui, sans-serif !important;
 }
