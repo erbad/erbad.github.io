@@ -12,8 +12,6 @@ body {
   background-attachment: fixed; /* o scroll */
 }
 
-
-
 /*html, body {
   height: 100%;
   margin: 0;
@@ -49,15 +47,6 @@ header {
   transition: background 0.7s;
 }
 
-header nav {
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  background: rgba(255,255,255,0.9); 
-  z-index: 1000; 
-}
-
-
 #menu-vertical {
   position: fixed;          /* fissa il menu sul lato sinistro */
   top: 0;
@@ -89,8 +78,6 @@ header nav {
 }
 
 /* Layout contenuto principale */
-main { margin-top: 80px; } /* Spazio per il menu fisso */
-
 #main-content, main {
   margin-left: 200px; /* lascia spazio al menu fisso */
   padding: 1em;
@@ -103,11 +90,10 @@ section {
   margin: 2em auto;
   max-width: 700px;
   background: #fff;
-  padding: 20px;
+  padding: 1.5em;
   border-radius: 8px;
   box-shadow: 0 2px 8px #ccc;
   transition: box-shadow 0.6s;
-  min-height: 100vh;
 }
 
 footer {
