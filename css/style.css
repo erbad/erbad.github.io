@@ -1,7 +1,7 @@
 body {
   font-family: 'Montserrat', serif;
   background: #FFFFFF;
-  color: #000000;
+  color: #B27395;
   margin: 0;
   transition: background 0.5s;
   background-image:
@@ -42,8 +42,8 @@ body {
 }
 
 header {
-  background: #000000;
-  color: #fff;
+  background: #89BBAB;
+  color: #FFFFFF;
   padding: 1em 0;
   text-align: center;
   transition: background 0.7s;
