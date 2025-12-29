@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Default';
+  src: url('../fonts/Roboto-Light.ttf') format('ttf');
+  font-display: swap;
+}
+
 body {
-  font-family: 'Montserrat', serif;
+  font-family: 'Default', system-ui, sans-serif;
+  line-height: 1.6;
   background: #FFFFFF;
   color: #B27395;
   margin: 0;
