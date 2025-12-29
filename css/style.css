@@ -60,7 +60,7 @@ header nav {
   position: fixed; 
   top: 0; 
   width: 100%; 
-  background: rgba(255,255,255,0.9); 
+  background: #E29251; 
   z-index: 1000; 
 }
 
@@ -109,12 +109,14 @@ main { margin-top: 80px; } /* Spazio per il menu fisso */
 section {
   margin: 2em auto;
   max-width: 700px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.5); /* Bianco semi-trasparente */
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px #ccc;
-  transition: box-shadow 0.6s;
-  min-height: 100vh;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.6s;
+  height: auto;       /* Si adatta al contenuto */
+  min-height: 60vh;   /* Altezza minima ma flessibile */
+  backdrop-filter: blur(10px); /* Effetto vetro opaco */
 }
 
 footer {
@@ -174,4 +176,44 @@ footer {
 
 .submenu li:hover {
   background-color: #555;
+}
+
+.sezione-contenuto {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.highlight { 
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 30px; 
+  border-radius: 10px; 
+  margin: 30px auto;
+  max-width: 600px;
+  height: auto;
+}
+
+.servizi-preview { 
+  list-style: none; 
+  padding: 20px;
+  margin: 30px auto; 
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  max-width: 500px;
+}
+
+.servizi-preview li { 
+  padding: 10px 0; 
+  font-size: 1.1em; 
+  position: relative; 
+  padding-left: 30px; 
+}
+
+.servizi-preview li:before { 
+  content: "✓"; 
+  color: #B27395; 
+  font-weight: bold; 
+  position: absolute; 
+  left: 0; 
 }
