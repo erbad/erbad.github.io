@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Default';
+  font-family: 'Roboto';
   src: url('../fonts/Roboto-Light.ttf') format('ttf');
   font-display: swap;
 }
 
 body {
-  font-family: 'Default', system-ui, sans-serif;
+  font-family: 'Roboto', system-ui, sans-serif;
   line-height: 1.6;
   background: #FFFFFF;
   color: #B27395;
@@ -164,6 +164,7 @@ footer {
   padding: 40px 20px;
   text-align: center;
   white-space: pre-wrap;
+  font-family:"Roboto", sans-serif;
 }
 
 .highlight { 
@@ -200,12 +201,12 @@ footer {
 }
 
 * {
-  font-family: 'Default', system-ui, -apple-system, sans-serif !important;
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif !important;
 }
 
 section object,
 object * {
-  font-family: 'Default', system-ui, sans-serif !important;
+  font-family: 'Roboto', system-ui, sans-serif !important;
 }
 
 .form-contatti {
@@ -231,7 +232,7 @@ object * {
   border: 2px solid rgba(255,255,255,0.3);
   border-radius: 8px;
   background: rgba(255,255,255,0.8);
-  font-family: 'Default', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
   transition: all 0.3s;
   box-sizing: border-box;
@@ -255,7 +256,7 @@ object * {
   cursor: pointer;
   width: 100%;
   transition: all 0.3s;
-  font-family: 'Default', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-invia:hover {
