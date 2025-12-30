@@ -89,9 +89,14 @@ section {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: all 0.6s;
-  height: auto;       /* Si adatta al contenuto */
-  min-height: 60vh;   /* Altezza minima ma flessibile */
+  height: auto !important;       /* Si adatta al contenuto */
   backdrop-filter: blur(10px); /* Effetto vetro opaco */
+}
+/* Settings forzati! */
+section object {
+  width: 100%;
+  height: auto !important;     /* ← CRUCIALE */
+  min-height: 0;               /* ← Rimuove vincoli */
 }
 
 footer {
