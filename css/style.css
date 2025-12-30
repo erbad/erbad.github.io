@@ -84,19 +84,22 @@ main { margin-top: 80px; } /* Spazio per il menu fisso */
 section {
   margin: 2em auto;
   max-width: 700px;
-  background: rgba(255, 255, 255, 0.5); /* Bianco semi-trasparente */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: all 0.6s;
-  height: auto !important;       /* Si adatta al contenuto */
-  backdrop-filter: blur(10px); /* Effetto vetro opaco */
+  background: rgba(255,255,255,0.5);
+  display: contents; /* ← Magia! */
 }
-/* Settings forzati! */
-section object {
+
+section > object {
+  display: block;
   width: 100%;
-  height: auto !important;     /* ← CRUCIALE */
-  min-height: 0;               /* ← Rimuove vincoli */
+  height: auto !important;
+  min-height: unset !important;
+  background: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
 }
 
 footer {
