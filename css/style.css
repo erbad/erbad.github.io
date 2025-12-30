@@ -210,13 +210,15 @@ object * {
 }
 
 .form-contatti {
-  max-width: 500px;
+  max-width: auto !important;        /* ← Più largo */
   margin: 30px auto;
+  text-align: center;      /* ← Allinea tutto al centro */
 }
 
 .form-gruppo {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: left;
+  width: auto !important;
 }
 
 .form-gruppo label {
@@ -224,16 +226,18 @@ object * {
   margin-bottom: 8px;
   font-weight: 600;
   color: #D85F38;
+  font-size: 1.1em;        /* ← Font più grande solo qui */
 }
 
 .form-input {
   width: 100%;
-  padding: 12px;
+  padding: 15px;           /* ← Più padding per allineamento */
   border: 2px solid rgba(255,255,255,0.3);
   border-radius: 8px;
-  background: rgba(255,255,255,0.8);
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  background: rgba(255,255,255,0.9);
+  font-family: 'Default', sans-serif;
+  font-size: 1.1em;        /* ← Font più grande solo nel form */
+  line-height: 1.4;        /* ← Migliora allineamento verticale */
   transition: all 0.3s;
   box-sizing: border-box;
 }
@@ -241,28 +245,30 @@ object * {
 .form-input:focus {
   outline: none;
   border-color: #A398C6;
-  background: rgba(255,255,255,0.95);
-  box-shadow: 0 0 10px rgba(164,241,52,0.3);
+  background: rgba(255,255,255,1);
+  box-shadow: 0 0 10px rgba(163,152,198,0.3);
 }
 
 .btn-invia {
   background: #A398C6;
   color: #000;
   border: none;
-  padding: 15px 40px;
-  font-size: 1.1em;
+  padding: 18px 50px;      /* ← Più alto e largo */
+  font-size: 1.2em;        /* ← Font più grande */
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
   width: 100%;
+  max-width: 300px;        /* ← Larghezza massima bottone */
+  margin: 0 auto;
+  display: block;          /* ← Centra bottone */
   transition: all 0.3s;
-  font-family: 'Roboto', sans-serif;
 }
 
 .btn-invia:hover {
-  background: #A398C6;
+  background: #8F7AB3;
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(164,241,52,0.4);
+  box-shadow: 0 5px 15px rgba(163,152,198,0.4);
 }
 
 .form-note {
