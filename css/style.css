@@ -193,5 +193,18 @@ input:focus, textarea:focus {
   text-decoration: none;
 }
 
+.foto-bio {
+  width: 25% !important;              /* Si adatta al contenitore */
+  /* max-width: 200px;        /* ← Limite massimo */
+  aspect-ratio: 1;         /* ← QUADRATA perfetta (1:1) */
+  /* height: 200px; ← ELIMINATA! */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  margin: 1em auto 1em 0;
+  display: block;
+  float: center;
+}
+
 /* Pulizia: rimuovi regole inutili */
 .menu, .submenu, .container, #main-content { display: none; }
