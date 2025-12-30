@@ -71,7 +71,7 @@ header nav a:hover {
 }
 
 main {
-  margin-top: 180px; /* ← Aumentato per header più alto */
+  margin-top: 120px; /* ← Aumentato per header più alto */
   padding-bottom: 2em;
 }
 
@@ -238,6 +238,16 @@ input:focus, textarea:focus {
   object-fit: cover;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   display: block;
+}
+
+.bio-testo {
+  text-align: justify;       /* ← Mantiene giustificazione */
+  line-height: 1.8;
+  margin-top: 1em;
+}
+
+.bio-testo p {
+  margin-bottom: 1.5em;
 }
 
 /* Pulizia: rimuovi regole inutili */
