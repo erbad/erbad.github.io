@@ -194,14 +194,9 @@ input:focus, textarea:focus {
 }
 
 .foto-container {
-  width: 25% !important;              /* Si adatta al contenitore */
-  max-width: 150px;        /* ← Limite massimo */
-  aspect-ratio: 1;         /* ← QUADRATA perfetta (1:1) */
   display: flex;
   flex-direction: column;
-  border-radius: 50%;      /* Cerchio perfetto */
-  align-items: center;   /* ← Centra foto e testo */
-  text-align: center;
+  align-items: center;
   margin-bottom: 2em;
 }
 
