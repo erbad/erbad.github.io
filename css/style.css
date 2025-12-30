@@ -179,5 +179,19 @@ input:focus, textarea:focus {
   box-shadow: 0 5px 15px rgba(163,152,198,0.4);
 }
 
+.link-interno {
+  color: #B27395;           /* Arancione come strong */
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.link-interno:hover {
+  color: #B27395;
+  border-bottom: 2px solid #B27395;
+  text-decoration: none;
+}
+
 /* Pulizia: rimuovi regole inutili */
 .menu, .submenu, .container, #main-content { display: none; }
