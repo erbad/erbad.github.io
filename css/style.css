@@ -12,8 +12,8 @@
 body {
   font-family: 'Roboto', system-ui, sans-serif;
   line-height: 1.6;
-  background: #FFFFFF;
-  color: #B27395;
+  background: rgba(0, 0, 0, 0.75);
+  color: #000000;
   margin: 0;
   transition: background 0.5s;
   background-image:
@@ -21,12 +21,12 @@ body {
     url('../Pictures/Tandem.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll; /* o fixed! */
 }
 
 header {
   background: #89BBAB;
-  color: #FFFFFF;
+  color: #000000;
   padding: 1em 0;
   text-align: center;
   transition: background 0.7s;
@@ -83,7 +83,7 @@ section:hover {
 .sezione-contenuto h2 {
   text-align: center;
   margin-bottom: 2em;
-  color: #B27395;
+  color: #000000;
 }
 
 .sezione-contenuto p {
@@ -104,7 +104,8 @@ ul {
 }
 
 strong {
-  color: #B27395;
+  color: #D85F38 !important;  /* Arancione del menu - SCELTA PERFETTA */
+  font-weight: bold;
 }
 
 footer {
