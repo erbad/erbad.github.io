@@ -197,7 +197,7 @@ input:focus, textarea:focus {
   width: 25% !important;              /* Si adatta al contenitore */
   /* max-width: 200px;        /* ← Limite massimo */
   aspect-ratio: 1;         /* ← QUADRATA perfetta (1:1) */
-  /* height: 200px; ← ELIMINATA! */
+  height: 200px; /* ← ELIMINATA! */
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
