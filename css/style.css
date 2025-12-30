@@ -202,3 +202,65 @@ section object,
 object * {
   font-family: 'Default', system-ui, sans-serif !important;
 }
+
+.form-contatti {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.form-gruppo {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-gruppo label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #D85F38;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.8);
+  font-family: 'Default', sans-serif;
+  font-size: 1em;
+  transition: all 0.3s;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #A398C6;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 0 10px rgba(164,241,52,0.3);
+}
+
+.btn-invia {
+  background: #A398C6;
+  color: #000;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s;
+  font-family: 'Default', sans-serif;
+}
+
+.btn-invia:hover {
+  background: #A398C6;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(164,241,52,0.4);
+}
+
+.form-note {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.95em;
+}
