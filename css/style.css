@@ -200,5 +200,16 @@ input:focus, textarea:focus {
   margin-bottom: 2em;
 }
 
+/* CORRETTO: La FOTO vera e propria */
+.foto-bio {
+  width: 25%;
+  max-width: 200px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  display: block;
+}
+
 /* Pulizia: rimuovi regole inutili */
 .menu, .submenu, .container, #main-content { display: none; }
