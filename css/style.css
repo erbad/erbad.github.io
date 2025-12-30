@@ -87,6 +87,7 @@ section {
   min-height: 30vh;
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255,255,255,0.3);  /* Bordo sottile */
+  scroll-margin-top: 140px;
 }
 
 /* Distanza extra tra sezioni */
