@@ -25,24 +25,53 @@ body {
 }
 
 header {
-  background: #89BBAB;
-  color: #000000;
-  padding: 1em 0;
+  position: fixed;         /* ← Fisso in alto */
+  top: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #89BBAB 0%, #89BBAB 100%); /* ← Gradiente unificato */
+  z-index: 1000;
   text-align: center;
-  transition: background 0.7s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  padding: 1em 0 0.5em 0;  /* Padding verticale */
+}
+
+header h1 {
+  margin: 0 0 0.5em 0;     /* Spazio sotto TANDEMLAB */
+  font-size: 2.2em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 3px;
 }
 
 header nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #E29251;
-  z-index: 1000;
-  padding: 1em 0;
+  position: static;        /* ← Non più fisso separato */
+  display: flex;           /* ← Menu orizzontale */
+  justify-content: center;
+  gap: 2em;                /* Spazio tra link */
+  margin: 0;
+  padding: 0.5em 1em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 20px;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+header nav a:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
 }
 
 main {
-  margin-top: 100px; /* Spazio per menu fisso */
+  margin-top: 180px; /* ← Aumentato per header più alto */
   padding-bottom: 2em;
 }
 
@@ -202,8 +231,8 @@ input:focus, textarea:focus {
 
 /* CORRETTO: La FOTO vera e propria */
 .foto-bio {
-  width: 25%;
-  max-width: 200px;
+  width: 50%;
+  max-width: 400px;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
