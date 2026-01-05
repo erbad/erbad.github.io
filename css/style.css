@@ -4,6 +4,12 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'CocoLight';
+  src: url('../fonts/Cocogoose-Light.ttf') format('ttf');
+  font-display: swap;
+}
+
 * {
   font-family: 'Roboto', system-ui, -apple-system, sans-serif !important;
   box-sizing: border-box;
@@ -25,10 +31,11 @@ body {
 }
 
 header {
+  font-family: 'CocoLight', system-ui, sans-serif !important;
   position: fixed;         /* ← Fisso in alto */
   top: 0;
   width: 100%;
-  background: linear-gradient(180deg, #89BBAB 0%, #89BBAB 100%); /* ← Gradiente unificato */
+  background: linear-gradient(180deg, #B27395 0%, #B27395 100%); /* ← Gradiente unificato */
   z-index: 1000;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
