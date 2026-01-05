@@ -312,8 +312,6 @@ input:focus, textarea:focus {
   max-width: 100%;
   height: 350px;  /* Altezza fissa come nella foto */
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .testo-colonna {
@@ -325,7 +323,7 @@ input:focus, textarea:focus {
 .testo-colonna h2 {
   text-align: left;  /* ← Non centrato qui */
   margin-bottom: 1.5em;
-  color: #FFFFFF !important;
+  color: #000000 !important;
 }
 
 /* PARTE INFERIORE: normale testo 1 colonna */
