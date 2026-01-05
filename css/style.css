@@ -73,13 +73,13 @@ header nav a {
 
 main {
   margin-top: 120px;  /* Solo per il menu fisso */
-  max-width:1400px !important /* 1200px; */
+  width:100% !important /* 1200px; */
 }
 
 section {
   margin: 0;                    /* ← Nessun margine */
   padding: 4em 5%;             /* ← Padding laterale piccolo */
-  width: 100%;                 /* ← TUTTA la larghezza */
+  width: 80%;                 /* ← TUTTA la larghezza */
   min-height: 80vh;            /* ← Altezza generosa */
   display: flex;
   flex-direction: column;
