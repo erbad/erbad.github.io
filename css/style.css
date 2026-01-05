@@ -45,7 +45,6 @@ header h1 {
   margin: 0 0 0.5em 0;     /* Spazio sotto TANDEMLAB */
   font-size: 2.2em;
   color: #000000;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   letter-spacing: 3px;
 }
 
@@ -287,6 +286,52 @@ input:focus, textarea:focus {
 
 .bio-testo p {
   margin-bottom: 1.5em;
+}
+
+/* LAYOUT MISTO COMPLETO */
+.layout-misto {
+  padding: 4em 5%;
+  min-height: auto;
+}
+
+/* PARTE SUPERIORE: 2 colonne fisse */
+.parte-superiore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* ← 50% img + 50% testo */
+  gap: 4em;
+  margin-bottom: 3em;
+  align-items: start;
+}
+
+.img-colonna {
+  display: flex;
+  justify-content: center;
+}
+
+.img-layout {
+  max-width: 100%;
+  height: 350px;  /* Altezza fissa come nella foto */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.testo-colonna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testo-colonna h2 {
+  text-align: left;  /* ← Non centrato qui */
+  margin-bottom: 1.5em;
+  color: #FFFFFF !important;
+}
+
+/* PARTE INFERIORE: normale testo 1 colonna */
+.parte-inferiore {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Pulizia: rimuovi regole inutili */
