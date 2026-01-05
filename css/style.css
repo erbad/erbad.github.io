@@ -12,8 +12,8 @@
 body {
   font-family: 'Roboto', system-ui, sans-serif;
   line-height: 1.6;
-  background: rgba(0, 0, 0, 0.75);
-  color: #000000;
+  background: rgba(0, 0, 0, 1);
+  color: #FFFFFF;
   margin: 0;
   transition: background 0.5s;
   background-image:
@@ -65,29 +65,65 @@ header nav a {
   letter-spacing: 1px;
 }
 
-header nav a:hover {
-  background: rgba(255,255,255,0.2);
-  transform: translateY(-2px);
-}
-
 main {
-  margin-top: 120px; /* ← Aumentato per header più alto */
-  padding-bottom: 2em;
+  margin-top: 120px;  /* Solo per il menu fisso */
 }
 
 section {
-  margin: 4em auto;           /* Più spazio tra sezioni */
-  max-width: 750px;           /* Leggermente più largo */
-  background: rgba(255, 255, 255, 0.85);  /* Più opaco */
-  padding: 30px;              /* Più padding interno */
-  border-radius: 12px;        /* Bordi più arrotondati */
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);  /* Ombra marcata */
-  transition: all 0.6s ease;
-  height: auto !important;
-  min-height: 30vh;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);  /* Bordo sottile */
-  scroll-margin-top: 250px;
+  margin: 0;                    /* ← Nessun margine */
+  padding: 4em 5%;             /* ← Padding laterale piccolo */
+  width: 100%;                 /* ← TUTTA la larghezza */
+  min-height: 80vh;            /* ← Altezza generosa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-margin-top: 100px;
+  --testo-colore: #FFFFFF;     /* ← Colore di DEFAULT */
+  --colonne-num: 1;           /* ← Colonne di DEFAULT */
+  --colonna-gap: 0;
+}
+
+.sezione-contenuto {
+  column-count: var(--colonne-num);
+  column-gap: var(--colonna-gap);
+  color: var(--testo-colore);
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* PRIMA SEZIONE (TandemLAB) - Bianco */
+section:nth-child(1) {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 50%, #FFFFFF 100%);
+}
+
+/* SECONDA SEZIONE (Chi siamo) - Lilla */
+section:nth-child(2) {
+  background: linear-gradient(135deg, #A398C6 0%, #A398C6 50%, #A398C6 100%);
+}
+
+/* TERZA SEZIONE (Cosa facciamo) - Verde */
+section:nth-child(3) {
+  background: linear-gradient(135deg, #89bbab 0%, #89bbab 50%, #89bbab 100%);
+}
+
+/* QUARTA SEZIONE (I nostri servizi)- Viola */
+section:nth-child(4) {
+  background: linear-gradient(135deg, #B27395 0%, #B27395 50%, #B27395 100%);
+}
+
+/* QUINTA SEZIONE (Calendario)- Bianco */
+section:nth-child(5) {
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 50%, #FFFFFF 100%);
+}
+
+/* SESTA SEZIONE (FAQ)- Arancione */
+section:nth-child(6) {
+  background: linear-gradient(135deg, #E29251 0%, #E29251 50%, #E29251 100%);
+}
+
+/* SETTIMA SEZIONE (Contattaci)- Verde */
+section:nth-child(7) {
+  background: linear-gradient(135deg, #89bbab 0%, #89bbab 50%, #89bbab 100%);
 }
 
 /* Distanza extra tra sezioni */
@@ -95,11 +131,6 @@ main section + section {
   margin-top: 3em;
 }
 
-/* Effetto hover rettangoli */
-section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
-}
 
 .sezione-contenuto {
   max-width: 800px;
@@ -112,7 +143,7 @@ section:hover {
 
 .sezione-contenuto h2 {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 2.6em;
   color: #000000;
 }
 
