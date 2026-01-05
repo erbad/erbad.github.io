@@ -193,17 +193,17 @@ footer {
 }
 
 .form-gruppo {
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin-bottom: 25px;
   text-align: left;
-  width: 100%;
+  width: 80%;
 }
 
 .form-gruppo label {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #D85F38;
+  color: #000000;
   font-size: 1.1em;
 }
 
