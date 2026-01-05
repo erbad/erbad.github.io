@@ -41,7 +41,7 @@ header {
 }
 
 header h1 {
-  font-family: 'CocoLight' !important;
+  font-family: 'CocoLight', system-ui, sans-serif !important;
   margin: 0 0 0.5em 0;     /* Spazio sotto TANDEMLAB */
   font-size: 2.2em;
   color: #000000;
@@ -50,7 +50,7 @@ header h1 {
 }
 
 header nav {
-  font-family: 'CocoLight' !important;
+  font-family: 'CocoLight', system-ui, sans-serif !important;
   position: static;        /* ← Non più fisso separato */
   display: flex;           /* ← Menu orizzontale */
   justify-content: center;
@@ -60,7 +60,7 @@ header nav {
 }
 
 header nav a {
-  font-family: 'CocoLight' !important;
+  font-family: 'CocoLight', system-ui, sans-serif !important;
   color: white;
   text-decoration: none;
   font-weight: bold;
