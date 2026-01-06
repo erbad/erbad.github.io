@@ -172,7 +172,7 @@ ul {
 }
 
 strong {
-  color: #000000 !important;  
+  --colore: #000000;  
   font-weight: bold;
 }
 
