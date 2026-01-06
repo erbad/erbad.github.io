@@ -16,6 +16,7 @@
 /* } */
 
 body {
+  overflow-x: hidden;
   font-family: 'Roboto', system-ui, sans-serif;
   line-height: 1.6;
   background: rgba(0, 0, 0, 1);
@@ -72,6 +73,7 @@ header nav a {
 }
 
 main {
+  overflow-x: hidden;
   margin-top: 120px;  /* Solo per il menu fisso */
   width:100% !important /* 1200px; */
 }
@@ -134,6 +136,7 @@ main section + section {
 
 
 .sezione-contenuto {
+  max-width: 900px;
   column-count: var(--colonne-num);
   column-gap: var(--colonna-gap);
   color: var(--testo-colore);
