@@ -79,24 +79,18 @@ main {
 section {
   margin: 0;                    /* ← Nessun margine */
   padding: 4em 5%;             /* ← Padding laterale piccolo */
-  width: 80%;                 /* ← TUTTA la larghezza */
+  width: 100%;                 /* ← TUTTA la larghezza */
   min-height: 80vh;            /* ← Altezza generosa */
   display: flex;
   flex-direction: column;
   justify-content: center;
   scroll-margin-top: 100px;
+  margin-bottom: -1em !important;
   --testo-colore: #000000;     /* ← Colore di DEFAULT */
   --colonne-num: 1;           /* ← Colonne di DEFAULT */
   --colonna-gap: 0;
 }
 
-.sezione-contenuto {
-  column-count: var(--colonne-num);
-  column-gap: var(--colonna-gap);
-  color: var(--testo-colore);
-  text-align: justify;
-  line-height: 1.7;
-}
 
 /* PRIMA SEZIONE (TandemLAB) - Bianco */
 section:nth-child(1) {
@@ -140,7 +134,10 @@ main section + section {
 
 
 .sezione-contenuto {
-  max-width: 800px;
+  column-count: var(--colonne-num);
+  column-gap: var(--colonna-gap);
+  color: var(--testo-colore);
+  line-height: 1.7;
   margin: 0 auto;
   padding: 20px 0;
   text-align: justify;        /* TESTO GIUSTIFICATO */
