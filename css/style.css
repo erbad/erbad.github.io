@@ -321,13 +321,13 @@ input:focus, textarea:focus {
   max-width: 500px;
   flex-direction: column;
   justify-content: center;
-  color: #000000 !important;
+  color: var(--colore);
 }
 
 .testo-colonna h2 {
   text-align: left;  /* ← Non centrato qui */
   margin-bottom: 1.5em;
-  color: #000000 !important;
+  color: var(--colore); 
 }
 
 /* PARTE INFERIORE: normale testo 1 colonna */
