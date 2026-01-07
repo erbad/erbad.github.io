@@ -151,7 +151,7 @@ main section + section {
 .sezione-contenuto h2 {
   text-align: center;
   margin-bottom: 2.6em;
-  color: #000000;
+  color: var(--colore);
 }
 
 .sezione-contenuto p {
