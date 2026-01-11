@@ -162,8 +162,10 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden; 
   scroll-margin-top: 0px;
   margin-bottom: 0 !important;
+  scrollbar-width: none;
   --testo-colore: #000000;
   --colonne-num: 1;
   --colonna-gap: 0;
@@ -211,15 +213,18 @@ main section + section {
 
 /* CONTENUTO GENERICO DELLE SEZIONI */
 .sezione-contenuto {
-  max-width: 900px;
+  max-width: 900px;       /* larghezza massima del blocco testo */
+  width: 100%;
+  padding: 0 1.5rem;      /* margine interno simmetrico */
+  margin: 0 auto;         /* centra il blocco dentro la sezione */
   column-count: var(--colonne-num);
   column-gap: var(--colonna-gap);
   color: var(--testo-colore);
-  margin: 0 auto;
-  padding: 0 0;
   text-align: justify;
   line-height: 1.8;
   white-space: normal;
+  overflow: hidden; 
+  scrollbar-width: none;
 }
 
 .sezione-contenuto h2 {
@@ -232,6 +237,10 @@ main section + section {
   margin-bottom: 1.5em;
   text-align: justify;
   hyphens: auto;
+}
+
+.sezione-contenuto::-webkit-scrollbar {
+  display: none;         /* Chrome/Safari: nasconde scrollbar */
 }
 
 blockquote {
