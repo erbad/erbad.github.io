@@ -293,6 +293,14 @@ input, textarea {
   transition: all 0.3s;
 }
 
+#menuToggle input {
+  width: 40px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
 input:focus, textarea:focus {
   outline: none;
   border-color: #A398C6;
