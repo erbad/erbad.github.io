@@ -395,6 +395,9 @@ input:focus, textarea:focus {
   gap: 4em;
   margin-bottom: 3em;
   align-items: start;
+  max-width: 900px;  /* AGGIUNGI QUESTA RIGA */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-colonna {
@@ -468,4 +471,21 @@ input:focus, textarea:focus {
 
 body {
   overflow-x: hidden;
+}
+
+.layout-misto {
+  padding: 4em 5%;  /* eredita padding simmetrico da section */
+  min-height: auto;
+}
+
+/* La grid ora è dentro .sezione-contenuto centrato */
+.parte-superiore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  margin-bottom: 3em;
+  align-items: start;
+  max-width: 900px;  /* AGGIUNGI QUESTA RIGA */
+  margin-left: auto;
+  margin-right: auto;
 }
