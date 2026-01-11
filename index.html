@@ -26,7 +26,7 @@
           <a href="#offerta">Servizi</a>
           <a href="#calendario">Calendario</a>
           <a href="#FAQ">FAQ</a>
-          <a href="#contatti">Contatti</a>
+          <a href="#contattaci">Contatti</a>
         </nav>
       </div>
     </header>
@@ -320,5 +320,18 @@
     <footer>
       <p>© 2025 TANDEMLAB</p>
     </footer>
+    
+    <script> // script che chiude automaticamente il menu dopo aver scelto la voce
+      document.addEventListener('DOMContentLoaded', function () {
+        const checkbox = document.getElementById('menu-checkbox');
+        const links = document.querySelectorAll('#menu a');
+
+        links.forEach(link => {
+          link.addEventListener('click', () => {
+            checkbox.checked = false;   // chiude il menu
+          });
+        });
+      });
+    </script>
   </body>
 </html>
