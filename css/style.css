@@ -272,6 +272,8 @@ input:focus, textarea:focus {
   width: 100%;
   max-width: 300px;
   transition: all 0.3s;
+  display: block;
+  margin: 0 auto 0 auto;
 }
 
 .btn-invia:hover {
