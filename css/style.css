@@ -196,7 +196,7 @@ main section + section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: var(--vertical-align, center;
+  align-items: var(--vertical-align, center);
 }
 
 /* FORM */
