@@ -187,7 +187,6 @@ main section + section {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  text-align: justify;
 }
 
 /* DUE COLONNE */
@@ -208,24 +207,29 @@ main section + section {
 }
 
 /* TESTI E IMMAGINI SEMPRE CONFINATI */
-.contenitore p, .contenitore h2, .contenitore h3 {
+.contenitore h2 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.contenitore p {
+  text-align: justify;
   max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
-  margin-bottom: 1.5em;
-  line-height: 1.8;
 }
 
 .contenitore img {
   max-width: 100%;
   height: auto;
   display: block;
+  width: 350px;        /* Dimensione base per foto principali */
+  max-width: min(90vw, 450px);  /* Non oltre viewport o 450px */
 }
 
-.contenitore h2 {
-  text-align: center;
-  margin-bottom: 2em;
+.contenitore-2col img {
+  width: 100%;         /* Riempie tutta la colonna */
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
 }
 
 /* FORM STILI */
