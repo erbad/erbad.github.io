@@ -215,7 +215,7 @@ main section + section {
 }
 
 .contenitore p {
-  text-align: var(--h2-align, justify);
+  text-align: var(--p-align, justify);
   max-width: 100%;
 }
 
@@ -307,6 +307,8 @@ footer {
 strong { 
   font-weight: bold; 
   color: var(--text-color, #000000);
+  text-align: var(--strong-align, left);
+
 }
 
 .link-interno { 
