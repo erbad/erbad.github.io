@@ -329,8 +329,13 @@ strong {
   object-fit: cover;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   display: block;
+  align-items: center;
 }
 
 .testo-nero .contenitore { color: #000 !important; }
 
 .testo-nero .contenitore h2 { color: #000 !important; }
+
+.testo-bianco .contenitore { color: #FFFFFF !important; }
+
+.testo-bianco .contenitore h2 { color: #FFFFFF !important; }
