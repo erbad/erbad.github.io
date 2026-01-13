@@ -311,3 +311,18 @@ strong { font-weight: bold; }
 .link-interno:hover { 
   border-bottom: 2px solid #B27395; 
 }
+
+
+.foto-bio {
+  width: 50%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  display: block;
+}
+
+.testo-nero .contenitore { color: #000 !important; }
+
+.testo-nero .contenitore h2 { color: #000 !important; }
