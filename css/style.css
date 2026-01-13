@@ -166,8 +166,8 @@ section:nth-child(1) { background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 1
 section:nth-child(2) { background: linear-gradient(135deg, #A398C6 0%, #A398C6 100%); }
 section:nth-child(3) { background: linear-gradient(135deg, #89bbab 0%, #89bbab 100%); }
 section:nth-child(4) { background: linear-gradient(135deg, #B27395 0%, #B27395 100%); }
-section:nth-child(5) { background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%); }
-section:nth-child(6) { background: linear-gradient(135deg, #E29251 0%, #E29251 100%); }
+section:nth-child(5) { background: linear-gradient(135deg, #E29251 0%, #E29251 100%); }
+section:nth-child(6) { background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%); }
 section:nth-child(7) { background: linear-gradient(135deg, #89bbab 0%, #89bbab 100%); }
 
 main section + section {
