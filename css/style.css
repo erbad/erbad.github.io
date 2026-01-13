@@ -306,7 +306,7 @@ footer {
 /* UTILITY */
 strong { 
   font-weight: bold; 
-  color: var(--text-color, #000000);
+  color: var(--strong-color, #000000);
   text-align: var(--strong-align, left);
 
 }
