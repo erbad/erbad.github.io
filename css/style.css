@@ -343,7 +343,7 @@ strong {
 }
 
 .link-esterno {
-  color: #FFFFFF;
+  color: var(--link-color, #000000);
   text-decoration: none;
   font-weight: bold;
   border-bottom: 2px solid transparent;
