@@ -261,8 +261,8 @@ input:focus, textarea:focus {
 }
 
 .btn-invia {
-  background: #000;
-  color: #fff;
+  background: #B27395;
+  color: #000000;
   border: none;
   padding: 18px;
   font-size: 1.2em;
@@ -297,8 +297,8 @@ input:focus, textarea:focus {
 
 /* FOOTER */
 footer {
-  background: #283655;
-  color: #fff;
+  background: #B27395;
+  color: #FFFFFF;
   text-align: center;
   padding: 2em 0;
   width: 100%;
@@ -336,6 +336,14 @@ strong {
 
 .link-interno {
   color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.link-esterno {
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
   border-bottom: 2px solid transparent;
