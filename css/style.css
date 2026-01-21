@@ -371,7 +371,7 @@ strong {
   padding: 0.6rem 2.5rem;
   background: #B27395;      /* colore sfondo */
   color: #FFFFFF;
-  font-size: 26px;
+  font-size: 18px;
   border-radius: 999px;     /* forma “pillola”; metti 12px per rettangolo morbido */
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -414,13 +414,14 @@ strong {
   font-weight: 700;
   letter-spacing: 0.05em;
 }
+
 .linea-calendario {
   display: block;              /* assicurati che sia a blocco */
   width: 100%;                 /* o 600px se vuoi fisso */
-  max-width: 600px auto;
-  margin: 0.5rem auto;         /* centrato orizzontalmente */
+  max-width: 600px;
+  margin: 0.2rem auto;         /* centrato orizzontalmente */
   border: none;
-  height: 2px;
+  height: 4px;
   background: #FFFFFF;         /* colore linea */
 }
 
