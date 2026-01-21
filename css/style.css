@@ -414,13 +414,14 @@ strong {
   font-weight: 700;
   letter-spacing: 0.05em;
 }
-
 .linea-calendario {
+  display: block;              /* assicurati che sia a blocco */
+  width: 100%;                 /* o 600px se vuoi fisso */
+  max-width: 600px auto;
+  margin: 0.5rem auto;         /* centrato orizzontalmente */
   border: none;
-  height: 2px;                 /* spessore */
+  height: 2px;
   background: #FFFFFF;         /* colore linea */
-  margin: 0.2rem 0.2rem;   /* spazio sopra/sotto */
-  max-width: 600px;            /* stessa larghezza delle colonne */
 }
 
 .testo-nero .contenitore { color: #000 !important; }
