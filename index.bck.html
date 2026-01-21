@@ -1,284 +1,329 @@
+<!-- Backup prima di aver messo le tre colonne sul calendario 21/1/26 - 10:40 -->
+
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TANDEMLAB</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      html { scroll-behavior: smooth; }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>TANDEM<strong>LAB</strong></h1>
-      <nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TandemLAB</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>html { scroll-behavior: smooth; }</style>
+  <link rel="icon" type="image/png" href="Pictures/Icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="Pictures/Icons/favicon.svg">
+  <link rel="shortcut icon" href="Pictures/Icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="Pictures/Icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-title" content="TandemLAB">
+  <link rel="manifest" href="Pictures/Icons/site.webmanifest">
+</head>
+<body>
+  <header>
+      <h1>
+        <span style="font-weight: 300;">TANDEM</span><strong>LAB</strong>
+      </h1>    
+      <div id="menuToggle">
+      <input type="checkbox" id="menu-checkbox"/>
+      <span></span><span></span><span></span>
+      <nav id="menu">
         <a href="#home">Home</a>
-        <a href="#chi-siamo">Chi Siamo</a>
-        <a href="#cosa-facciamo">Cosa Facciamo</a>
-        <a href="#offerta">L'offerta</a>
+        <a href="#chi-siamo">Chi siamo</a>
+        <a href="#cosa-facciamo">Cosa facciamo</a>
+        <a href="#offerta">Servizi</a>
         <a href="#calendario">Calendario</a>
         <a href="#FAQ">FAQ</a>
-        <a href="#contattaci">Contattaci</a>
+        <a href="#contattaci">Contatti</a>
       </nav>
-    </header>
-    
-    <main>
-      
-      <section id="home">
-            <div class="sezione-contenuto">
+    </div>
+  </header>
 
-              <h2>Tandem Lab è un laboratorio editoriale a due voci</h2>
-
-              Siamo Beatrice e Chiara, due editor con percorsi, generi ed esperienze diverse che hanno scelto di lavorare insieme per fare una cosa precisa: leggere i testi come accade davvero in una redazione, mettendo a confronto sguardi differenti e complementari.<br>
-              
-              In editoria, un manoscritto non viene mai valutato da una sola persona. 
-              Viene discusso, confrontato, messo in relazione a un catalogo, a un pubblico, a un mercato. 
-              Tandem Lab nasce per portare questo processo fuori dalle case editrici e renderlo accessibile a chi scrive.<br>
-              
-              Lavoriamo su <strong>valutazioni editoriali</strong> e <strong>laboratori di progettazione</strong>, soprattutto nei momenti decisivi di un progetto: 
-              prima di chiudere la stesura, quando è il momento di proporsi a una casa editrice o quando un manoscritto ha bisogno di una diagnosi onesta prima di ulteriori revisioni.<br>
-              
-              Il nostro punto di forza è il confronto. 
-              Quello che per una di noi è un pregio, per l’altra può essere un nodo critico. 
-              È proprio in questo spazio che nasce una lettura più completa, meno arbitraria e più vicina alla realtà editoriale.<br>
-              
-              Offriamo metodo, chiarezza e una restituzione argomentata, pensata per aiutarti a capire <strong>dove sei</strong>, <strong>cosa funziona</strong> e <strong>quale direzione può prendere davvero il tuo libro</strong>.
-          </div>
-      </section>
-      
-      <section id="chi-siamo">
-        <div class="sezione-contenuto">
-          <h2>Chi siamo?</h2>
-            <div class="foto-container">
-              <img src="Pictures/duo.jpeg" alt="Le editors di Tandem Lab" class="foto-bio">
-            </div>
-          
-          
-          
-          <div class="bio-testo">
-            <p>
-            <strong><span style="color: #B27395; font-size: 1.35em">Beatrice</span></strong> <br>
-            Autrice, editor e traduttrice genovese. 
-            Lavoro in ambito editoriale da oltre cinque anni e sono specializzata in quei generi che ti portano fuori dalla realtà: 
-            giallo, thriller, fantasy, fantascientifico e horror. 
-            Sono collaboratrice esterna di due case editrici del gruppo Mauri Spagnol e una casa edtrice nel gruppo Mondadori. 
-            <br><br>
-            </p>
-            <p>
-            <strong><span style="color: #E29251; font-size: 1.35em">Chiara</span></strong> <br>
-            Autrice, editor e writing coach milanese trasferitasi ormai oltralpe. 
-            Lavoro da più di sei anni a contatto con artisti e scrittori emergenti e sono specializzata in narrativa e romance. 
-            Dal 2024 collaboro con varie case editrice nell’ambito della lettura e della valutazione editoriale. <br>
-            </p>
-          </div>
+  <main>
+    <!-- HOME - 2 COLONNE -->
+    <section id="home" class="testo-nero" style="--vertical-align: center;">
+      <div class="contenitore contenitore-2col">
+        <div>
+          <img src="Pictures/Logo.png" alt="TandemLab">
         </div>
-      </section>
+        <div>
+          <h2 style="--h2-align:left; font-size: 28px; ">TandemLAB<br>è un laboratorio<br>editoriale a due voci</h2>
+          <p>Lavoriamo su <strong>valutazioni editoriali</strong> e <strong>laboratori di progettazione</strong>, 
+            soprattutto nei momenti decisivi di un progetto: 
+            prima di chiudere la stesura, quando è il momento di proporsi a una casa editrice o quando un manoscritto ha bisogno di una diagnosi onesta prima di ulteriori revisioni.</p>
+        </div>
+      </div>
+      <div class="contenitore contenitore-1col">
+        <p>Il nostro punto di forza è il confronto. 
+          Quello che per una di noi è un pregio, per l'altra può essere un nodo critico. 
+          È proprio in questo spazio che nasce una lettura più completa, meno arbitraria e più vicina alla realtà editoriale.
+          <br>Offriamo metodo, chiarezza e una restituzione argomentata, pensata per aiutarti a capire <strong>dove sei</strong>, <strong>cosa funziona</strong> e <strong>quale direzione può prendere davvero il tuo libro</strong>.</p>
+      </div>
+    </section>
 
-      <section id="cosa-facciamo">
-        <div class="sezione-contenuto">
-          <h2>Cosa facciamo</h2>
-          <p>
-          <em>&laquo;Questa agenzia mi ha detto che devo potenziare l’arco di trasformazione.</em> <br><br>
-          <em>Un editor mi ha suggerito di alleggerire lo stile.</em> <br><br>
-          <em>I beta reader dicono che la trama non funziona, ma non sono d’accordo sul perché.</em><br><br><br>
-          </p>
+    <!-- CHI SIAMO - 2 COLONNE + TESTO -->
+    <section id="chi-siamo" style="--vertical-align: center;">
+      <div class="contenitore contenitore-2col">
+        <div>
+          <h2>CHI SIAMO?</h2>
+          <p>Siamo Beatrice e Chiara, due editor con percorsi, generi ed esperienze diverse che hanno scelto di lavorare insieme per fare una cosa precisa: leggere i testi come accade davvero in una redazione, mettendo a confronto sguardi differenti e complementari.<br>In editoria, un manoscritto non viene mai valutato da una sola persona. Viene discusso, confrontato, messo in relazione a un catalogo, a un pubblico, a un mercato. Tandem Lab nasce per portare questo processo fuori dalle case editrici e renderlo accessibile a chi scrive.</p>
+        </div>
+        <div>
+          <img src="Pictures/duo.jpeg" alt="Le editors di Tandem Lab" class="foto-bio">
+        </div>
+      </div>
+      <div class="contenitore contenitore-2col">
+        <div>
+          <h3><strong style="--strong-color: #FFFFFF; font-size: 22px; ">Beatrice</strong></h3>
+          <p>Autrice, editor e traduttrice genovese. Lavoro in ambito editoriale da oltre cinque anni e sono specializzata in quei generi che ti portano fuori dalla realtà: giallo, thriller, fantasy, fantascientifico e horror. Sono collaboratrice esterna di due case editrici del gruppo Mauri Spagnol e una casa editrice nel gruppo Mondadori.</p>
+        </div>
+        <div>
+          <h3><strong style="--strong-color: #FFFFFF;font-size: 22px; ">Chiara</strong></h3>
+          <p>Autrice, editor e writing coach milanese trasferitasi ormai oltralpe. Lavoro da più di sei anni a contatto con artisti e scrittori emergenti e sono specializzata in narrativa e romance. Dal 2024 collaboro con varie case editrici nell'ambito della lettura e della valutazione editoriale.</p>
+        </div>
+      </div>
+    </section>
 
-          <p>
-          Se ti riconosci in queste frasi, sappi che <strong>non sei tu il problema</strong>. 
-          Quando i pareri – più o meno attendibili – sono tanti e divergenti, diventa difficile capire da dove ripartire.<br>
-          
-          In <strong>Tandem Lab</strong> leggiamo e valutiamo manoscritti inediti offrendo <strong>un parere unico e coeso</strong>, che tiene conto di punti di vista diversi senza perdere di vista ciò che conta davvero: 
-          la solidità del testo e il suo potenziale editoriale.<br>
-          
-          Ti prestiamo i nostri occhi esperti, ma soprattutto il nostro <strong>dialogo professionale</strong>, simile a quello che avviene in una casa editrice. 
-          Così puoi capire davvero cosa funziona, cosa va rivisto e perché.<br>
-          
-          Invece di collezionare valutazioni isolate da professionisti diversi, ottieni <strong>una lettura strutturata e coerente</strong>, pensata per aiutarti a prendere decisioni consapevoli.<br>
+    <!-- COSA FACCIAMO - 2 COLONNE -->
+    <section id="cosa-facciamo" style="--vertical-align: center;">
+      <div class="contenitore contenitore-2col">
+        <div>
+          <strong style="--strong-color: #B27395; font-size: 28px; ">
+            &laquo;Questa agenzia mi ha detto che devo potenziare l'arco di trasformazione&raquo;</strong> <br><br>
+          <strong style="--strong-color: #B27395;font-size: 28px;">
+            &laquo;Un editor mi ha suggerito di alleggerire lo stile&raquo;</strong> <br><br>
+          <strong style="--strong-color: #B27395;font-size: 28px;">
+            &laquo;I beta reader dicono che la trama non funziona, ma non sono d'accordo sul perché&raquo;</strong>
+        </div>
+        <div>
+          <h2>COSA FACCIAMO?</h2>
+          <p>Se ti riconosci in queste frasi, sappi che <strong style="--strong-color: #FFFFFF;">non sei tu il problema</strong>. 
+            Quando i pareri – più o meno attendibili – sono tanti e divergenti, diventa difficile capire da dove ripartire.
+            <br>In <strong style="--strong-color: #FFFFFF;">Tandem Lab</strong> leggiamo e valutiamo manoscritti inediti offrendo <strong style="--strong-color: #FFFFFF;">un parere unico e coeso</strong>, 
+            che tiene conto di punti di vista diversi senza perdere di vista ciò che conta davvero: la solidità del testo e il suo potenziale editoriale.
+            <br>Ti prestiamo i nostri occhi esperti, ma soprattutto il nostro <strong style="--strong-color: #FFFFFF;">dialogo professionale</strong>, simile a quello che avviene in una casa editrice. 
+            Così puoi capire davvero cosa funziona, cosa va rivisto e perché.
+            <br>Invece di collezionare valutazioni isolate da professionisti diversi, ottieni <strong style="--strong-color: #FFFFFF;">una lettura strutturata e coerente</strong>, pensata per aiutarti a prendere decisioni consapevoli.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFERTA - 1 COLONNA -->
+    <section id="offerta" style="--vertical-align: center;">
+
+      <div class="contenitore contenitore-2col">
+        <div>
+          <h2 style="--h2-align:center; font-size: 22px;">I NOSTRI SERVIZI</h2>
+          <strong style="--strong-color: #FFFFFF; font-size: 22px;">Smart Check</strong><br>
+          <em>Valutazione di incipit e sinossi a quattro mani</em><br>
+          <p>Hai un'idea, un inizio, una sinossi… ma non sai se stai andando nella direzione giusta? 
+          Smart Check è una valutazione mirata pensata per chi è all'inizio del percorso e vuole capire se le basi del progetto sono solide.
+          È il servizio giusto se vuoi:
+          <ul>
+            <li>capire se l'idea funziona davvero prima di svilupparla</li>
+            <li>evitare di costruire un romanzo su fondamenta fragili</li>
+            <li>sapere se e come proseguire con la stesura</li>
+          </ul>
+          <strong style="--strong-color: #FFFFFF;">Cosa include:</strong>
+          <ul>
+            <li>Lettura dell'incipit (fino a 10.000 battute)</li>
+            <li>Analisi della sinossi</li>
+            <li>Scheda di valutazione a quattro mani</li>
+          </ul>
+          <strong style="--strong-color: #FFFFFF;">Tempistiche:</strong> 7–10 giorni<br>
+          <strong style="--strong-color: #FFFFFF;">Prezzo:</strong> 120€
           </p>
         </div>
-      </section>
+        <div>
+          <img src="Pictures/01.png" alt="Pic1">
+        </div>
+      </div>
 
-      <section id="offerta">
-          <div class="sezione-contenuto">
-          <h2>I nostri servizi</h2>
-          <div class="sezione-contenuto">
-              <strong><span style="color: #E29251; font-size: 1.35em">Smart Check</span></strong>
-              <br><em>Valutazione di incipit e sinossi a quattro mani</em>
-              <br><br>
-              Hai un’idea, un inizio, una sinossi… ma non sai se stai andando nella direzione giusta?
-              Smart Check è una valutazione mirata pensata per chi è all’inizio del percorso e vuole capire se le basi del progetto sono solide.
-              Leggiamo incipit e sinossi con il metodo di Tandem Lab: due sguardi indipendenti, un confronto professionale e una restituzione chiara, senza ambiguità.
-              <br>
-              È il servizio giusto se vuoi:
-              <ul>
-                  <li>capire se l’idea funziona davvero prima di svilupparla</li>
-                  <li>evitare di costruire un romanzo su fondamenta fragili</li>
-                  <li>sapere se e come proseguire con la stesura</li>
-              </ul>
-              Cosa include:
-              <ul>
-                  <li>Lettura dell’incipit (fino a 10.000 battute)</li>
-                  <li>Analisi della sinossi</li>
-                  <li>Scheda di valutazione a quattro mani con punti di forza del progetto, criticità principali ed indicazioni su struttura, tono e direzione narrativa.
-              </ul>
-              <br>
-              Tempistiche: 7–10 giorni
-              <br>
-              Prezzo: 120€ (in fiera 99€)
-          </div>
+      <div class="contenitore contenitore-2col">
+        <div>
+          <img src="Pictures/03.png" alt="Pic2">
+        </div>
+        <div>
+          <strong style="--strong-color: #FFFFFF; font-size: 22px;">Messa a Fuoco</strong><br>
+          <em>Valutazione editoriale completa a due voci</em> <br>
+          <p>Hai concluso la prima stesura e hai bisogno di una diagnosi chiara, prima di rimettere mano al testo o investirci altro tempo?
+            Messa a Fuoco è una valutazione editoriale completa che ti restituisce una lettura coerente e argomentata, frutto del confronto tra due editor con percorsi e sguardi diversi.
+            <br>È il servizio giusto se vuoi:
+            <ul>
+              <li>capire cosa funziona e cosa no nel tuo manoscritto; </li>
+              <li>uscire dalla confusione dei pareri contrastanti;</li>
+              <li>avere una direzione concreta da cui ripartire.</li>
+            </ul>
+            Cosa include:
+            <ul>
+              <li>Lettura completa del manoscritto </li>
+              <li>Scheda di valutazione a quattro mani</li>
+              <li>Sintesi integrata delle osservazioni</li>
+            </ul>
+            <strong style="--strong-color: #FFFFFF;">Tempistiche:</strong> 10–14 giorni<br>
+            <strong style="--strong-color: #FFFFFF;">Prezzo:</strong> 380€
+          </p>
+        </div>
+      </div>
 
-          <div class="sezione-contenuto">
+      <div class="contenitore contenitore-2col">
+        <div>
+            <strong style="--strong-color: #FFFFFF; font-size: 22px;">Doppia Lente</strong><br>
+            <em>Valutazione editoriale approfondita con confronto diretto</em> <br>
+            <p> Un’analisi approfondita del manoscritto, accompagnata da un confronto diretto con entrambe le editor, per capire non solo cosa non funziona, ma perché (e come intervenire).
+            È il servizio giusto se vuoi:
+            <ul>
+                  <li>una valutazione simile a quella di una vera redazione</li>
+                  <li>comprendere a fondo i nodi strutturali e stilistici del testo</li>
+                  <li>impostare una revisione efficace e consapevole</li>
+            </ul>
+            Cosa include:
+            <ul>
+              <li>Lettura completa del manoscritto</li>
+              <li>Scheda di valutazione a quattro mani</li>
+              <li>Sintesi integrata delle osservazioni</li>
+              <li>Call di confronto di 60–90 minuti con entrambe le editor</li>
+              <li>Roadmap personalizzata con le priorità di revisione</li>
+            </ul>
+            <strong style="--strong-color: #FFFFFF;">Tempistiche:</strong> 30–45 giorni<br>
+            <strong style="--strong-color: #FFFFFF;">Prezzo:</strong> 680€
+            </p>
+        </div>
+        <div>
+          <img src="Pictures/02.png" alt="Pic3">
+        </div>
+      </div>
 
-              <strong><span style="color: #D85F38; font-size: 1.35em">Messa a Fuoco</span></strong>
-              <br><em>Valutazione editoriale completa a due voci</em>
-              <br><br>
-              Hai concluso la prima stesura e hai bisogno di una diagnosi chiara, prima di rimettere mano al testo o investirci altro tempo?
-              Messa a Fuoco è una valutazione editoriale completa che ti restituisce una lettura coerente e argomentata, frutto del confronto tra due editor con percorsi e sguardi diversi.
-              <br>
-              È il servizio giusto se vuoi:
-              <ul>
-                  <li>Capire cosa funziona e cosa no nel tuo manoscritto</li>
-                  <li>Uscire dalla confusione dei pareri contrastanti</li>
-                  <li>Avere una direzione concreta da cui ripartire</li>
-              </ul>
-              Cosa include:
-              <ul>
-                  <li>Lettura completa del manoscritto</li>
-                  <li>Scheda di valutazione a quattro mani</li>
-                  <li>Sintesi integrata delle osservazioni</li>
-              </ul>
-              <br>
-              Tempistiche: 10–14 giorni
-              <br>
-              Prezzo: 380€ (in fiera 320€)
-          </div>
-
-          <div class="sezione-contenuto">
-
-              <strong><span style="color: #B27395; font-size: 1.35em">Doppia Lente</span></strong> 
-              <br><em>Valutazione editoriale approfondita con confronto diretto</em>
-              <br><br>
-              Doppia Lente è un’analisi approfondita del manoscritto, accompagnata da un confronto diretto con entrambe le editor, per capire non solo cosa non funziona, ma <em>perché</em> (e come intervenire). <br>
-              È il servizio giusto se vuoi:
-              <ul>
-                  <li>Una valutazione simile a quella di una vera redazione</li>
-                  <li>Comprendere a fondo i nodi strutturali e stilistici del testo</li>
-                  <li>Impostare una revisione efficace e consapevole</li>
-              </ul>
-              Cosa include:
-              <ul>
-                  <li>Lettura completa del manoscritto</li>
-                  <li>Scheda di valutazione a quattro mani</li>
-                  <li>Sintesi integrata delle osservazioni</li>
-                  <li>Call di confronto di 60–90 minuti con entrambe le editor</li>
-                  <li>Roadmap personalizzata con le priorità di revisione</li>
-              </ul>
-              Tempistiche: 30–45 giorni
-              Prezzo: 680€ (in fiera 590€)
-          </div>
-
-          <div class="sezione-contenuto">
-
-              <strong><span style="color: #A398C6; font-size: 1.35em">Writers' Room</span></strong> 
-              <br><em>Valutazione approfondita, con follow-up sulla revisione</em>
-              <br><br>
-              Questo servizio è pensato per chi vuole un accompagnamento più solido durante la fase di riscrittura, senza entrare in un processo di editing vero e proprio.
-              Dopo la valutazione completa, rivediamo il testo revisionato per verificare se gli interventi hanno funzionato e se la direzione è rimasta coerente.
-              È il servizio giusto se vuoi:
-              <ul>
+      <div class="contenitore contenitore-2col">
+        <div>
+          <img src="Pictures/04.png" alt="Pic4">
+        </div>
+        <div>
+            <strong style="--strong-color: #FFFFFF; font-size: 22px;">Writers Room</strong><br>
+            <em>Valutazione approfondita, con follow-up sulla revisione</em> <br>
+            <p> Questo servizio è pensato per chi vuole un accompagnamento più solido durante la fase di riscrittura, senza entrare in un processo di editing vero e proprio.
+            Dopo la valutazione completa, rivediamo il testo revisionato per verificare se gli interventi hanno funzionato e se la direzione è rimasta coerente.
+            È il servizio giusto se vuoi:
+            <ul>
                   <li>non perdere la bussola durante la revisione</li>
                   <li>verificare che le correzioni siano efficaci</li>
                   <li>avere un ultimo parere professionale prima del passo successivo</li>
-              </ul>
-              Cosa include:
-              <ul>
-                  <li>Tutto ciò che è incluso in Doppia Lente</li>
-                  <li>Rilettura del testo revisionato entro sei mesi</li>
-                  <li>Parere finale di lettura sul lavoro svolto</li>
-              </ul>
-              Tempistiche
-              <ul>
-                  <li>30–45 giorni per la prima fase</li>
-                  <li>20–30 giorni per la rilettura finale</li>
-              </ul>
-              Prezzo: 1050€ (in fiera 890€)
-          </div>
-      </section>
+            </ul>
+            Cosa include:
+            <ul>
+              <li>Tutto ciò che è incluso in Doppia Lente</li>
+              <li>Rilettura del testo revisionato entro sei mesi</li>
+              <li>Parere finale di lettura sul lavoro svolto</li>
+            </ul>
+            <strong style="--strong-color: #FFFFFF;">Tempistiche:</strong> 30–45 giorni per la prima fase, 20-30 giorni per la rilettura finale<br>
+            <strong style="--strong-color: #FFFFFF;">Prezzo:</strong> 1050€
+            </p>
+        </div>
 
-      <section id="FAQ">
-        <div class="sezione-contenuto">
+      </div>
+    </section>
 
-          <h2>FAQ — Domande frequenti</h2>
+    <section id="calendario" class="testo-bianco">
+      <div class="contenitore contenitore-1col" style="--text-align: justify; ">
+      <h2> CALENDARIO FORMAZIONE </h2>
+        <p>Per informazioni compila il modulo <a href="#contattaci" class="link-interno" style="--link-color:#FFFFFF;">contatti</a>.
+        </p>
 
-          <strong>Il vostro servizio è un editing?</strong><br>
+        <p>
+            <strong style="--strong-color: #FFFFFF; font-size: 21px; "> Rotta Narrativa </strong> <br>
+            Laboratorio pratico di scrittura creativa su trama, personaggi e stile | 2h ad incontro  | <strong style="--strong-color: #FFFFFF;"> € 129,99 </strong> il ciclo di tre incontri <br>
+            <strong style="--strong-color: #000000;"> Venerdì 13,20,27 febbraio alle 18 </strong> <br>
+            <br><br>
+            <strong style="--strong-color: #FFFFFF; font-size: 21px; "> Il mio testo in meglio </strong> <br>
+            Masterclass di Revisione stilistica | 1h30 | <strong style="--strong-color: #FFFFFF;"> € 49,99 </strong> <br>
+            <strong style="--strong-color: #000000;"> Sabato 14 marzo alle 10 </strong> <br>
+            <br><br>
+            <strong style="--strong-color: #FFFFFF; font-size: 21px; "> Trappole e buone pratiche per vendere il tuo libro </strong> <br>
+            Masterclass di promozione editoriale | 1h30 | <strong style="--strong-color: #FFFFFF;"> € 49,99 </strong> <br>
+            <strong style="--strong-color: #000000;"> Sabato 11 Aprile alle 10 </strong> <br>
+            <br><br>
+            <strong style="--strong-color: #FFFFFF; font-size: 21px; "> Leggere per lavoro, è possibile? </strong> <br>
+            Masterclass di lettura editoriale | 1h30 | <strong style="--strong-color: #FFFFFF;"> € 49,99 </strong> <br>
+            <strong style="--strong-color: #000000;"> Sabato 30 Maggio alle 10 </strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ - 1 COLONNA -->
+    <section id="FAQ" class="testo-nero">
+      <div class="contenitore contenitore-1col" style="--text-align: justify; ">
+
+        <h2> FAQ — Domande frequenti </h2>
+          <p>
+          <strong style="font-size: 24px;">Il vostro servizio è un editing?</strong> <br>
           No. I servizi di Tandem Lab sono valutazioni editoriali a quattro occhi.
           In parte svolgono una funzione simile all’editing – perché mettono in evidenza punti di forza, criticità e nodi strutturali – ma non intervengono direttamente sul testo.
           La fase di revisione resta in mano all’autore. Il nostro compito è offrirti una lettura professionale, argomentata e coerente, che ti permetta di capire cosa rivedere, perché e in che direzione.
           Il livello di supporto successivo varia in base al servizio scelto.
-          
-          <br><br><br>
-          <strong>Garantite la pubblicazione?</strong><br>
+          <br><br>
+
+          <strong style="font-size: 24px;">Garantite la pubblicazione?</strong><br>
           No. <em>E nessuno può farlo seriamente</em>.<br>
           Quello che possiamo garantirti è un’altra cosa: alla fine della nostra valutazione avrai idee chiare su ciò che funziona davvero nel tuo libro, su ciò che non funziona e su come intervenire in modo consapevole.
-          
-          <br><br><br>
-          <strong>A che punto del lavoro è meglio richiedere una valutazione?</strong><br>
+          <br><br>
+
+          <strong style="font-size: 24px;">A che punto del lavoro è meglio richiedere una valutazione?</strong><br>
           <em>Dipende da come lavori tu.</em><br>
           Se senti il bisogno di avere una direzione chiara fin dall’inizio, puoi richiedere anche una valutazione preliminare. In generale, però, il momento ideale è subito dopo aver concluso la prima stesura.
           Non serve che il testo sia perfetto: è sufficiente che ci siano tutte le componenti chiave del progetto (struttura, personaggi, direzione narrativa) su cui desideri un parere professionale.
+          <br><br>
 
-          <br><br><br>
-          <strong>Come avviene concretamente il vostro lavoro?</strong><br>
+          <strong style="font-size: 24px;">Come avviene concretamente il vostro lavoro?</strong><br>
           Ognuna di noi legge il testo in modo indipendente, senza confrontarsi prima con l’altra.
           Questo ci permette di mantenere due sguardi autentici e non condizionati.
           <br>In un secondo momento, ci confrontiamo in modo approfondito sul manoscritto.
           Infine, redigiamo una scheda di valutazione a quattro mani che tiene conto di entrambi i punti di vista, cercando una sintesi che sia utile, coerente e applicabile a 360°.
           <br>È lo stesso tipo di dialogo che avviene all’interno di una casa editrice.
-          
-          <br><br><br>
-          <strong>Se volessi essere seguito anche durante la revisione, con un vero e proprio editing?</strong><br>
-          In quel caso puoi contattarci per ricevere un preventivo personalizzato. Lavoriamo su generi diversi e, a seconda del progetto, potremmo:
-          <ul>
-              <li>consigliarti di lavorare principalmente con una di noi, con l’altra come secondo parere;</li>
-              <li>oppure decidere di seguire il testo insieme, se il progetto lo richiede.</li>
-          </ul>
+          <br><br>
+
+          <strong style="font-size: 24px;">Se volessi essere seguito anche durante la revisione, con un vero e proprio editing?</strong><br>
+          In quel caso puoi contattarci per ricevere un preventivo personalizzato. Lavoriamo su generi diversi e, a seconda del progetto, potremmo:<br>
+              - consigliarti di lavorare principalmente con una di noi, con l’altra come secondo parere;<br>
+              - decidere di seguire il testo insieme, se il progetto lo richiede. <br>
           Ogni scelta viene fatta in funzione del tuo libro e delle tue preferenze.
+          <br><br>
 
-          <br><br><br>
-          <strong>E se invece volessi fare un percorso di formazione?</strong><br>
-          Puoi cliccare sul nostro calendario per vedere tutti i corsi e le date disponibili. 
+          <strong style="font-size: 24px;">E se invece volessi fare un percorso di formazione?</strong><br>
+          Puoi cliccare sul nostro <a href="#calendario" class="link-interno">calendario</a> per vedere tutti i corsi e le date disponibili. 
           L’idea cardine rimane quella di fare formazione in due, così da poter offrire la nostra esperienza in maniera costantemente sinergica.
+          </p>
+        
+      </div>
+    </section>
 
-        </div>
-      </section>
+    <section id="contattaci" class="testo-nero">
+      <div class="contenitore contenitore-form">
+        <h2>CONTATTACI!</h2>
+        <p>Per contattarci puoi compilare il form oppure inviarci una <a href="mailto:info@tandemlabstudio.it?cc=beatrice@tandemlabstudio.it&cc=chiara@tandemlabstudio.it&subject=Richiesta%20Informazioni&body=Ciao%2C%0A%0Avorrei%20informazioni%20sui%20vostri%20servizi..." class="link-esterno">mail</a>, ti risponderemo entro 48 ore lavorative.</p>
+        <form action="https://formspree.io/f/mykyarlb" method="POST" class="form-contatti">
+          <div>
+            <label for="email">La tua email:</label>
+            <input type="email" id="email" name="email" required placeholder="nome@esempio.com">
+          </div>
+          <div>
+            <label for="messaggio">Il tuo messaggio:</label>
+            <textarea id="messaggio" name="messaggio" required rows="10" placeholder="Scrivi il tuo messaggio..."></textarea>
+          </div>
+          <button type="submit" class="btn-invia">Invia</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-      <section id="contattaci">
-        <div class="sezione-contenuto">
-          <h2>Contattaci!</h2>
-          
-          <form action="https://formspree.io/f/mykyarlb" method="POST" class="form-contatti">
-            <div class="form-gruppo">
-              <label for="email">La tua email:</label>
-              <input type="email" id="email" name="email" required 
-                    placeholder="nome@esempio.com">
-            </div>
-            
-            <div class="form-gruppo">
-              <label for="messaggio">Il tuo messaggio:</label>
-              <textarea id="messaggio" name="messaggio" required 
-                        rows="10" placeholder="Scrivi il tuo messaggio..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn-invia">Invia</button>
-          </form>
-        </div>
+  <footer>
+    <p>© 2026 <a href="https://www.instagram.com/tan.demlab" class="link-interno" style="--link-color:#FFFFFF;">TandemLAB</a> | Graphics by <a href="https://www.instagram.com/giulia.biasini" class="link-interno" style="--link-color:#FFFFFF;">Giulia Biasini</a> | Site by <a href="https://github.com/erbad" class="link-interno" style="--link-color:#FFFFFF;">Davide Erba</a></p>
+  </footer>
 
-      </section>
-    </main>
-    
-    <footer>
-      <p>© 2025 TANDEMLAB</p>
-    </footer>
-  </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkbox = document.getElementById('menu-checkbox');
+      const links = document.querySelectorAll('#menu a');
+      links.forEach(link => {
+        link.addEventListener('click', () => checkbox.checked = false);
+      });
+    });
+  </script>
+</body>
 </html>
+

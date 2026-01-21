@@ -359,6 +359,59 @@ strong {
   border-bottom: 2px solid #B27395;
 }
 
+.titolo-curvo {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+.pillola-titolo {
+  display: inline-block;
+  padding: 0.6rem 2.5rem;
+  background: #B27395;      /* colore sfondo */
+  color: #FFFFFF;
+  border-radius: 999px;     /* forma “pillola”; metti 12px per rettangolo morbido */
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+.bloc-3colonne {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;                       /* niente spazio orizzontale */
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  font-size: 1rem;
+}
+
+/* linee verticali tra le colonne */
+.bloc-3colonne .colonna {
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.bloc-3colonne .colonna:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 2px;                   /* spessore linea */
+  height: 80%;
+  background: #FFFFFF;          /* o #B27395 / #000 a scelta */
+  opacity: 0.8;
+}
+
+.col-titolo {
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
 .testo-nero .contenitore { color: #000 !important; }
 
 .testo-nero .contenitore h2 { color: #000 !important; }
