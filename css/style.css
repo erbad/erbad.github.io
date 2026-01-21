@@ -219,6 +219,12 @@ main section + section {
   margin-bottom: 2em;
 }
 
+/* ECCEZIONE PER CALENDARIO */
+.contenitore h2[style*="Calendario"] {
+  margin-bottom: 0.3em !important;
+}
+
+
 .contenitore p {
   text-align: var(--p-align, justify);
   max-width: 100%;
@@ -404,7 +410,7 @@ strong {
   position: absolute;
   top: 10%;
   right: 0;
-  width: 2px;                   /* spessore linea */
+  width: 3px;                   /* spessore linea */
   height: 80%;
   background: #FFFFFF;          /* o #B27395 / #000 a scelta */
   opacity: 0.8;
@@ -425,15 +431,11 @@ strong {
   background: #FFFFFF;         /* colore linea */
 }
 
-section:has(.titolo-curvo) {
-  padding-top: 0 !important;
-  padding-bottom: 0.5em !important;
-}
-
-/* Negative margin per tirare SU l'SVG */
-.titolo-curvo {
-  margin-top: -2.5em !important;  /* ← TIRA SU di 40px */
-  margin-bottom: 0.2em !important;
+.titoli-concentrici {
+  width: 100%;
+  max-width: 550px;
+  margin: 0.5em auto !important;
+  display: block !important;
 }
 
 .testo-nero .contenitore { color: #000 !important; }

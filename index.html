@@ -219,21 +219,33 @@
 
     <section id="calendario" class="testo-bianco">
       <div class="contenitore contenitore-1col" max-width="800px" style="--text-align: justify; ">
-      <h2 style="font-size: 30px"> Calendario </h2>
+      <svg viewBox="0 0 600 200" class="titoli-concentrici" style="margin: 0.2em auto; display: block; height: 120px;">
+        <!-- Semicerchio SUPERIORE - CALENDARIO -->
+      <defs>
+        <path id="arco-calendario" 
+              d="M 80 120 Q 300 40 520 120" />
+      </defs>
+      <text font-size="50" font-weight="700" fill="#65C8B1" 
+            font-family="'CocoLight', sans-serif" letter-spacing="4">
+        <textPath href="#arco-calendario" startOffset="50%" text-anchor="middle">
+          CALENDARIO
+        </textPath>
+      </text>
 
-        <svg viewBox="0 0 550 200" class="titolo-curvo">
-          <defs>
-            <path id="arco-masterclass"
-                  d="M 20 120 Q 260 20 530 120" />
-          </defs>
-          <text font-size="44" font-weight="700" fill="#65C8B1" letter-spacing="8">
-            <textPath href="#arco-masterclass" startOffset="50%" text-anchor="middle">
-              MASTERCLASS
-            </textPath>
-          </text>
-        </svg>
+      <!-- Semicerchio INFERIORE - MASTERCLASS -->
+      <defs>
+        <path id="arco-masterclass" 
+              d="M 60 180 Q 300 110 540 180" />
+      </defs>
+      <text font-size="50" font-weight="700" fill="#65C8B1" 
+            font-family="'CocoLight', sans-serif" letter-spacing="6">
+        <textPath href="#arco-masterclass" startOffset="50%" text-anchor="middle">
+          MASTERCLASS
+        </textPath>
+      </text>
+    </svg>
 
-        <p>Per informazioni compila il modulo <a href="#contattaci" class="link-interno" style="--link-color:#FFFFFF;">contatti</a>.
+        <p style="margin-top: 0.5em !important;">Per informazioni compila il <a href="#contattaci" class="link-interno" style="--link-color:#FFFFFF;">modulo di contatto</a>.
         </p>
 
         <hr class="linea-calendario">
@@ -243,8 +255,8 @@
           </div>
 
           <div class="colonna">
-            <div class="col-titolo">13, 20 e 27</div>
-            <div>Febbraio</div>
+            <div class="col-titolo">13, 20, 27<br>Febbraio</div>
+            <div></div>
           </div>
 
           <div class="colonna">
