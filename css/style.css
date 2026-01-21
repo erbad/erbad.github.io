@@ -371,14 +371,15 @@ strong {
   padding: 0.6rem 2.5rem;
   background: #B27395;      /* colore sfondo */
   color: #FFFFFF;
+  font-size: 26px;
   border-radius: 999px;     /* forma “pillola”; metti 12px per rettangolo morbido */
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
   margin: 1.5rem auto;
-  margin-top: 0.15rem;
-  margin-bottom: 0.15rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 .bloc-3colonne {
@@ -388,7 +389,7 @@ strong {
   align-items: center;
   text-align: center;
   max-width: 600px;
-  margin: 1.5rem auto;
+  margin: 0.2rem auto;
   font-size: 1rem;
 }
 
