@@ -425,6 +425,18 @@ strong {
   background: #FFFFFF;         /* colore linea */
 }
 
+.titolo-curvo,
+.titolo-curvo * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.titolo-curvo {
+  display: block !important;
+  width: 100% !important;
+  max-width: 500px !important;
+}
+
 .testo-nero .contenitore { color: #000 !important; }
 
 .testo-nero .contenitore h2 { color: #000 !important; }
