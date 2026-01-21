@@ -362,7 +362,7 @@ strong {
 .titolo-curvo {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 1rem;
+  margin: 0.3rem auto 0.5rem;
   display: block;
 }
 
@@ -395,7 +395,7 @@ strong {
 
 /* linee verticali tra le colonne */
 .bloc-3colonne .colonna {
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 0.2rem;
   position: relative;
 }
 
@@ -413,6 +413,14 @@ strong {
 .col-titolo {
   font-weight: 700;
   letter-spacing: 0.05em;
+}
+
+.linea-calendario {
+  border: none;
+  height: 2px;                 /* spessore */
+  background: #FFFFFF;         /* colore linea */
+  margin: 0.2rem 0.2rem;   /* spazio sopra/sotto */
+  max-width: 600px;            /* stessa larghezza delle colonne */
 }
 
 .testo-nero .contenitore { color: #000 !important; }
