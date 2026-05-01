@@ -60,6 +60,12 @@ ul{
     margin:0.4em;
 }
 
+/* Size of pictures/images */
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* HAMBURGER MENU */
 #menuToggle {
   position: relative;
